@@ -8,7 +8,7 @@ Category for test posts.
 
 
 
-<a href="/hydeout/pages/sidenotes.html">Direct link to pages/sidenotes.html </a>
+<a href="/pages/sidenotes.html">Direct link to pages/sidenotes.html </a>
 
 
 Posts are listed after this point.
