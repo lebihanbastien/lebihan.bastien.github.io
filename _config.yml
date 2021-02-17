@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Full Methane Vachette
 tagline:          'Personal site'
 description:      'Born to grill'
-url:              https://fullmethanevachette.github.io
+url:              https://lebihanbastien.github.io
 baseurl:          '/fmv'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
@@ -33,5 +33,3 @@ sidebar_home_link:  true
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
-
-theme: jekyll-theme-minimal
