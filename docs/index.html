@@ -32,6 +32,41 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
 
   <!-- Additional head bits without overriding original head -->
+ <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+
+
+
+
+<!-- Loading D3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Loading MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+ <!--   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+ 
+  
 </head>
 
 
@@ -49,9 +84,6 @@
   </header>
   <nav id="sidebar-nav-links">
   
-    <a class="home-link  active"
-        href="/">Home</a>
-  
   
 
   
@@ -66,22 +98,12 @@
   
     
       <a class="page-link "
-          href="/about.html">About</a>
+          href="/about.html">À propos</a>
     
   
 
   
     
-  
-
-  
-    
-  
-
-  
-    
-  
-
   
 
   
@@ -118,6 +140,24 @@
     
   
 
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
 
   
 
@@ -136,8 +176,16 @@
 
   
     
+    	 
       <a class="category-link "
-          href="/category/hydeout.html">Hydeout</a>
+          href="/category/climat.html">Climat</a>
+        
+    
+  
+
+  
+    
+    	
     
   
 
@@ -153,15 +201,10 @@
 
   
     
-  
-
-  
-    
-  
-
-  
-
-  
+    	 
+      <a class="category-link "
+          href="/category/serendipite.html">Sérendipité</a>
+        
     
   
 
@@ -175,12 +218,28 @@
 
   
     
-  
-
-  
-    
+    	 
       <a class="category-link "
           href="/category/tests.html">Tests</a>
+        
+    
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
     
   
 
@@ -259,32 +318,67 @@
   
   <article class="post-body">
     <h2 class="post-title">
-      <a href="/tests/2021/02/14/testing-sidenotes.html">
-        Testing Sidenotes
+      <a href="/climat/2021/02/21/apres-la-fresque.html">
+        Après la Fresque
       </a>
     </h2>
     <div class="post-meta">
-  <span class="post-date">14 Feb 2021</span>
+  <span class="post-date">
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feb 21, 2021
+
+    
+  </span>
   <span class="post-categories">
     
-      &bull;
-
       
       
       
 
       
-        <a href="/category/tests.html">
-          Tests
-        </a>
+        <span class='post-categories-tags'>
+          <span class='post-categories-tags-bullet'>&bull;</span>
+          <a href="/category/climat.html">
+            Climat
+          </a>
+        </span>
       
+    
+
     
   </span>
 </div>
 
-
     
-      <h1 id="testing-sidenotes">Testing Sidenotes</h1>
+      <p class="message"> Une sélection d'article à lire, d'outil à tester, de livre à dévorer, pour prolonger la discussion après une Fresque du Climat. </p>
 
     
 
@@ -293,6 +387,89 @@
       
       
 
+      
+        <a href="/climat/2021/02/21/apres-la-fresque.html">More &hellip;</a>
+      
+    
+  </article>
+  
+  <article class="post-body">
+    <h2 class="post-title">
+      <a href="/sidenotes">
+        Testing Sidenotes
+      </a>
+    </h2>
+    <div class="post-meta">
+  <span class="post-date">
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feb 14, 2021
+
+    
+  </span>
+  <span class="post-categories">
+    
+      
+      
+      
+
+      
+        <span class='post-categories-tags'>
+          <span class='post-categories-tags-bullet'>&bull;</span>
+          <a href="/category/tests.html">
+            Tests
+          </a>
+        </span>
+      
+    
+
+    
+  </span>
+</div>
+
+    
+      
+<figure class="post-illustration ">
+  <img src="/assets/img/rhino.png" />
+  
+</figure>
+
+    
+
+    
+      
+      
+      
+
+      
+        <a href="/sidenotes">More &hellip;</a>
       
     
   </article>
@@ -304,24 +481,59 @@
       </a>
     </h2>
     <div class="post-meta">
-  <span class="post-date">01 Jun 2017</span>
+  <span class="post-date">
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jun 1, 2017
+
+    
+  </span>
   <span class="post-categories">
     
-      &bull;
-
       
       
       
 
       
-        <a href="/category/hydeout.html">
-          Hydeout
-        </a>
+        <span class='post-categories-tags'>
+          <span class='post-categories-tags-bullet'>&bull;</span>
+          <a href="/category/hydeout.html">
+            Hydeout
+          </a>
+        </span>
       
+    
+
     
   </span>
 </div>
-
 
     
       <p>Hydeout updates the original <a href="https://github.com/poole/hyde">Hyde</a>
@@ -425,24 +637,59 @@ theme. Hope this works for you!</p>
       </a>
     </h2>
     <div class="post-meta">
-  <span class="post-date">28 Dec 2013</span>
+  <span class="post-date">
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dec 28, 2013
+
+    
+  </span>
   <span class="post-categories">
     
-      &bull;
-
       
       
       
 
       
-        <a href="/category/hydeout.html">
-          Hydeout
-        </a>
+        <span class='post-categories-tags'>
+          <span class='post-categories-tags-bullet'>&bull;</span>
+          <a href="/category/hydeout.html">
+            Hydeout
+          </a>
+        </span>
       
+    
+
     
   </span>
 </div>
-
 
     
       <p>Hyde is a brazen two-column <a href="http://jekyllrb.com">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. It’s based on <a href="http://getpoole.com">Poole</a>, the Jekyll butler.</p>
@@ -500,24 +747,59 @@ theme. Hope this works for you!</p>
       </a>
     </h2>
     <div class="post-meta">
-  <span class="post-date">07 Feb 2012</span>
+  <span class="post-date">
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feb 7, 2012
+
+    
+  </span>
   <span class="post-categories">
     
-      &bull;
-
       
       
       
 
       
-        <a href="/category/hydeout.html">
-          Hydeout
-        </a>
+        <span class='post-categories-tags'>
+          <span class='post-categories-tags-bullet'>&bull;</span>
+          <a href="/category/hydeout.html">
+            Hydeout
+          </a>
+        </span>
       
+    
+
     
   </span>
 </div>
-
 
     
       <div class="message">
@@ -674,47 +956,6 @@ theme. Hope this works for you!</p>
     
   </article>
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/hydeout/2012/02/05/markup-syntax-highlighting.html">
-        Markup: Syntax Highlighting
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">05 Feb 2012</span>
-  <span class="post-categories">
-    
-      &bull;
-
-      
-      
-      
-
-      
-        <a href="/category/hydeout.html">
-          Hydeout
-        </a>
-      
-    
-  </span>
-</div>
-
-
-    
-      Post displaying the various ways one can highlight code blocks with Jekyll. Some options include standard Markdown, GitHub Flavored Markdown, and Jekyll's `{% highlight %}` tag.
-    
-
-    
-      
-      
-      
-
-      
-        <a href="/hydeout/2012/02/05/markup-syntax-highlighting.html">More &hellip;</a>
-      
-    
-  </article>
-  
 
   
 <div class="pagination">
@@ -730,6 +971,7 @@ theme. Hope this works for you!</p>
     </main>
 
     <!-- Optional footer content -->
+
 
   </body>
 </html>
