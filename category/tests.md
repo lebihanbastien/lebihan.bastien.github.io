@@ -1,7 +1,7 @@
 ---
 layout: category
 title: Tests
-sidebar_sort_order: 324
+show: true
 ---
 
 Category for test posts.

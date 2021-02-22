@@ -1,21 +1,33 @@
 ---
-layout: page
+layout: default
 ---
 
-{% unless page.content == '' %}
-  {{ content }}
-{% endunless %}
+<div class="category-page-container">
 
-<ul class="posts-list">
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-    <li>
-      <h3>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-          <small>{{ post.date | date_to_string }}</small>
+  {% unless page.content == '' %}
+    {{ content }}
+  {% endunless %}
+
+  <section class="category-posts-list">
+    {% assign category = page.category | default: page.title %}
+
+    {% for post in site.categories[category] %}
+      {% if post.draft != true  %}
+        {% capture imagePath %}/assets/img/{{ post.cover }}{% endcapture %}
+        <a href="{{ site.baseurl }}{{ post.url }}" class='category-post-link'>
+          <div class='category-post-item'>
+            <div class='category-post-cover' style='background-image:url({{ imagePath | relative_url }});'></div>
+            <h3 class='category-post-title'>
+                {{ post.title }}
+            </h3>
+           <div class='category-post-date'>{% include translated_date.html date=post.date format=site.date_format lang='fr' %}</div>
+          </div>
         </a>
-      </h3>
-    </li>
-  {% endfor %}
-</ul>
+      {% endif %}
+    {% endfor %}
+
+    
+
+
+  </section>
+</div>

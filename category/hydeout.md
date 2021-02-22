@@ -1,6 +1,7 @@
 ---
 layout: category
 title: Hydeout
+show: false
 ---
 
 <p class="message">

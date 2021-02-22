@@ -1,0 +1,10 @@
+{% capture imagePath %}/assets/img/{{ include.name }}{% endcapture %}
+
+<figure class='category-cover'>
+  <img src="{{ imagePath | relative_url }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+  {% if include.legend-link-target %}
+    <figcaption><a href='{{ include.legend-link-target | relative_url }}' target='blank'>{{ include.legend-text  }}</a></figcaption>
+  {% elsif include.legend-text %}
+    <figcaption>{{ include.legend-text  }}</figcaption>
+  {% endif %}
+</figure>

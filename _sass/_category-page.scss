@@ -1,0 +1,103 @@
+.category-page-title {
+  text-align: left;
+  max-width: 850px;
+  width: 80%;
+  margin: 0 auto 20px;
+
+  @media (min-width: $medium-breakpoint) {
+    width: 100%;
+  }
+}
+
+.category-page-container {
+  background: $body-bg;
+
+  @media (min-width: $medium-breakpoint) {
+    padding-top: 30px;
+  }
+}
+
+.category-presentation {
+  margin-bottom: 40px;
+  width: 80%;
+
+  @media (min-width: $medium-breakpoint) {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+}
+
+.category-posts-list {
+  list-style: none;
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+
+  @media (min-width: $medium-breakpoint) {
+    width: unset;
+  }
+}
+
+.category-post-link {
+  display: inline-block;
+  width: 100%;
+
+  @media (min-width: $medium-breakpoint) {
+    width: 30%;
+    margin-right: 4%;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.category-post-item {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+
+  @media (min-width: $medium-breakpoint) {
+    margin-bottom: 20px;
+    border-bottom: 3px solid $gray-2;
+  }
+}
+
+.category-post-cover {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $medium-breakpoint) {
+    height: 200px;;
+  }
+}
+
+.category-post-title {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0;
+
+  @media (min-width: $medium-breakpoint) {
+    height: 60px;
+  }
+
+  @media (min-width: $large-breakpoint) {
+    height: initial;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.category-post-date {
+  font-size: 0.9rem;;
+  text-align: center;
+}
+
+.category-cover {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 25px;
+
+  @media (min-width: $medium-breakpoint) {
+    margin: 0 auto 50px;
+  }
+}
