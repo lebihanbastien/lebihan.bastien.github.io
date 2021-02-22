@@ -32,6 +32,41 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
 
   <!-- Additional head bits without overriding original head -->
+ <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+
+
+
+
+<!-- Loading D3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Loading MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+ <!--   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+ 
+  
 </head>
 
 
@@ -54,9 +89,6 @@
   </header>
   <nav id="sidebar-nav-links">
   
-    <a class="home-link "
-        href="/">Home</a>
-  
   
 
   
@@ -71,22 +103,12 @@
   
     
       <a class="page-link "
-          href="/about.html">About</a>
+          href="/about.html">À propos</a>
     
   
 
   
     
-  
-
-  
-    
-  
-
-  
-    
-  
-
   
 
   
@@ -120,14 +142,10 @@
   
 
   
-
-  
     
   
 
-
   
-
 
   
     
@@ -143,8 +161,38 @@
 
   
     
+  
+
+  
+
+
+  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+    	 
       <a class="category-link "
-          href="/category/hydeout.html">Hydeout</a>
+          href="/category/climat.html">Climat</a>
+        
+    
+  
+
+  
+    
+    	
     
   
 
@@ -160,15 +208,10 @@
 
   
     
-  
-
-  
-    
-  
-
-  
-
-  
+    	 
+      <a class="category-link "
+          href="/category/serendipite.html">Sérendipité</a>
+        
     
   
 
@@ -182,15 +225,31 @@
 
   
     
-  
-
-  
-
-  
-    
+    	 
       <a class="category-link "
           href="/category/tests.html">Tests</a>
+        
     
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
   
 
 
@@ -275,29 +334,155 @@
   
   <article class="post-body">
     <h2 class="post-title">
+      <a href="/hydeout/2012/01/29/markup-text-readability.html">
+        Markup: Text Readability Test
+      </a>
+    </h2>
+    <div class="post-meta">
+  <span class="post-date">
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jan 29, 2012
+
+    
+  </span>
+  <span class="post-categories">
+    
+      
+      
+      
+
+      
+        <span class='post-categories-tags'>
+          <span class='post-categories-tags-bullet'>&bull;</span>
+          <a href="/category/hydeout.html">
+            Hydeout
+          </a>
+        </span>
+      
+    
+
+    
+      <span class='post-categories-tags'>
+        <span class='post-categories-tags-bullet'>&bull;</span>
+        sample post
+      </span>
+    
+      <span class='post-categories-tags'>
+        <span class='post-categories-tags-bullet'>&bull;</span>
+        readability
+      </span>
+    
+      <span class='post-categories-tags'>
+        <span class='post-categories-tags-bullet'>&bull;</span>
+        test
+      </span>
+    
+  </span>
+</div>
+
+    
+      A large amount of sample text to test readability of a text heavy page.
+    
+
+    
+      
+      
+      
+
+      
+        <a href="/hydeout/2012/01/29/markup-text-readability.html">More &hellip;</a>
+      
+    
+  </article>
+  
+  <article class="post-body">
+    <h2 class="post-title">
       <a href="/hydeout/2012/01/11/markup-html-elements-and-formatting.html">
         Markup: HTML Elements and Formatting
       </a>
     </h2>
     <div class="post-meta">
-  <span class="post-date">11 Jan 2012</span>
+  <span class="post-date">
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jan 11, 2012
+
+    
+  </span>
   <span class="post-categories">
     
-      &bull;
-
       
       
       
 
       
-        <a href="/category/hydeout.html">
-          Hydeout
-        </a>
+        <span class='post-categories-tags'>
+          <span class='post-categories-tags-bullet'>&bull;</span>
+          <a href="/category/hydeout.html">
+            Hydeout
+          </a>
+        </span>
       
+    
+
     
   </span>
 </div>
-
 
     
       <p>A variety of common HTML elements to demonstrate the theme’s stylesheet and verify they have been styled appropriately.</p>
@@ -322,24 +507,79 @@
       </a>
     </h2>
     <div class="post-meta">
-  <span class="post-date">10 Sep 2010</span>
+  <span class="post-date">
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sep 10, 2010
+
+    
+  </span>
   <span class="post-categories">
     
-      &bull;
-
       
       
       
 
       
-        <a href="/category/hydeout.html">
-          Hydeout
-        </a>
+        <span class='post-categories-tags'>
+          <span class='post-categories-tags-bullet'>&bull;</span>
+          <a href="/category/hydeout.html">
+            Hydeout
+          </a>
+        </span>
       
+    
+
+    
+      <span class='post-categories-tags'>
+        <span class='post-categories-tags-bullet'>&bull;</span>
+        content
+      </span>
+    
+      <span class='post-categories-tags'>
+        <span class='post-categories-tags-bullet'>&bull;</span>
+        embeds
+      </span>
+    
+      <span class='post-categories-tags'>
+        <span class='post-categories-tags-bullet'>&bull;</span>
+        media
+      </span>
+    
+      <span class='post-categories-tags'>
+        <span class='post-categories-tags-bullet'>&bull;</span>
+        twitter
+      </span>
     
   </span>
 </div>
-
 
     
       <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Oh I dunno. It&#39;s probably been over 15 years since I smudged out a face with a pencil and kneaded eraser. <a href="https://twitter.com/hashtag/WIP?src=hash">#WIP</a> <a href="https://twitter.com/hashtag/Sktchy?src=hash">#Sktchy</a> <a href="https://t.co/PwqbMddyVK">pic.twitter.com/PwqbMddyVK</a></p>&mdash; Michael Rose (@mmistakes) <a href="https://twitter.com/mmistakes/status/826644109670612997">February 1, 2017</a></blockquote>
@@ -366,24 +606,64 @@
       </a>
     </h2>
     <div class="post-meta">
-  <span class="post-date">02 Jun 2010</span>
+  <span class="post-date">
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jun 2, 2010
+
+    
+  </span>
   <span class="post-categories">
     
-      &bull;
-
       
       
       
 
       
-        <a href="/category/hydeout.html">
-          Hydeout
-        </a>
+        <span class='post-categories-tags'>
+          <span class='post-categories-tags-bullet'>&bull;</span>
+          <a href="/category/hydeout.html">
+            Hydeout
+          </a>
+        </span>
       
+    
+
+    
+      <span class='post-categories-tags'>
+        <span class='post-categories-tags-bullet'>&bull;</span>
+        Post Formats
+      </span>
     
   </span>
 </div>
-
 
     
       <div class="embed-responsive embed-responsive-16by9">
@@ -410,24 +690,69 @@
       </a>
     </h2>
     <div class="post-meta">
-  <span class="post-date">05 Feb 2010</span>
+  <span class="post-date">
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feb 5, 2010
+
+    
+  </span>
   <span class="post-categories">
     
-      &bull;
-
       
       
       
 
       
-        <a href="/category/hydeout.html">
-          Hydeout
-        </a>
+        <span class='post-categories-tags'>
+          <span class='post-categories-tags-bullet'>&bull;</span>
+          <a href="/category/hydeout.html">
+            Hydeout
+          </a>
+        </span>
       
+    
+
+    
+      <span class='post-categories-tags'>
+        <span class='post-categories-tags-bullet'>&bull;</span>
+        Post Formats
+      </span>
+    
+      <span class='post-categories-tags'>
+        <span class='post-categories-tags-bullet'>&bull;</span>
+        quote
+      </span>
     
   </span>
 </div>
-
 
     
       <blockquote>
@@ -447,51 +772,6 @@
     
   </article>
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/hydeout/2010/01/07/post-standard.html">
-        Post: Standard
-      </a>
-    </h2>
-    <div class="post-meta">
-  <span class="post-date">07 Jan 2010</span>
-  <span class="post-categories">
-    
-      &bull;
-
-      
-      
-      
-
-      
-        <a href="/category/hydeout.html">
-          Hydeout
-        </a>
-      
-    
-  </span>
-</div>
-
-
-    
-      <p>All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, “Oh, why can’t you remain like this for ever!” This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.</p>
-
-<p>Mrs. Darling first heard of Peter when she was tidying up her children’s minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.</p>
-
-
-    
-
-    
-      
-      
-      
-
-      
-        <a href="/hydeout/2010/01/07/post-standard.html">More &hellip;</a>
-      
-    
-  </article>
-  
 
   
 <div class="pagination">
@@ -507,6 +787,7 @@
     </main>
 
     <!-- Optional footer content -->
+
 
   </body>
 </html>

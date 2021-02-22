@@ -15,7 +15,7 @@ blockquote .sidenote, blockquote .marginnote { margin-right: -79%; }
 
 .sidenote-number:after, .sidenote:before { content: counter(sidenote-counter) " "; font-size: 1.0rem; color: #a00000; position: relative; vertical-align: baseline; }
 
-.sidenote-number:after { content: counter(sidenote-counter); font-size: 0.8rem; top: -0.5rem; left: 0.1rem; }
+.sidenote-number:after { content: counter(sidenote-counter); font-size: 0.8rem; top: -0.5rem; left: -0.1rem; }
 
 .sidenote:before { content: counter(sidenote-counter) ". "; color: #a00000; top: 0rem; }
 
@@ -41,6 +41,48 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 
 @media (max-width: 760px) { label.margin-toggle:not(.sidenote-number) { display: inline; color: #a00000; } .sidenote, .marginnote { display: none; } .margin-toggle:checked + .sidenote, .margin-toggle:checked + .marginnote { display: block; float: left; left: 1rem; clear: both; width: 95%; margin: 1rem 2.5%; vertical-align: baseline; position: relative; } label { cursor: pointer; } pre, pre code, p code, p pre code { width: 90%; padding: 0; } .table-caption { display: block; float: right; clear: both; width: 98%; margin-top: 1rem; margin-bottom: 0.5rem; margin-left: 1%; margin-right: 1%; vertical-align: baseline; position: relative; } div.table-wrapper, table, table.booktabs { width: 85%; } div.table-wrapper { border-right: 1px solid #efefef; } img { max-width: 100%; } figcaption.maincolumn-figure, figure.fullwidth figcaption { float: none; text-align: center; } figure.fullwidth figcaption { margin-left: 0; } }
 
+.mjx-math { font-size: 1.3rem; }
+
+.category-page-title { text-align: left; max-width: 850px; width: 80%; margin: 0 auto 20px; }
+
+@media (min-width: 49rem) { .category-page-title { width: 100%; } }
+
+.category-page-container { background: #fff; }
+
+@media (min-width: 49rem) { .category-page-container { padding-top: 30px; } }
+
+.category-presentation { margin-bottom: 40px; width: 80%; }
+
+@media (min-width: 49rem) { .category-presentation { margin-bottom: 60px; width: 100%; } }
+
+.category-posts-list { list-style: none; width: 80%; max-width: 1100px; margin: auto; }
+
+@media (min-width: 49rem) { .category-posts-list { width: unset; } }
+
+.category-post-link { display: inline-block; width: 100%; }
+
+@media (min-width: 49rem) { .category-post-link { width: 30%; margin-right: 4%; } .category-post-link:nth-child(3n) { margin-right: 0; } }
+
+.category-post-item { margin-bottom: 10px; padding-bottom: 20px; }
+
+@media (min-width: 49rem) { .category-post-item { margin-bottom: 20px; border-bottom: 3px solid #e5e5e5; } }
+
+.category-post-cover { height: 180px; background-size: cover; background-position: center; }
+
+@media (min-width: 49rem) { .category-post-cover { height: 200px; } }
+
+.category-post-title { font-size: 1rem; text-align: center; margin-bottom: 0; }
+
+@media (min-width: 49rem) { .category-post-title { height: 60px; } }
+
+@media (min-width: 80rem) { .category-post-title { height: initial; margin-bottom: 0.5rem; } }
+
+.category-post-date { font-size: 0.9rem; text-align: center; }
+
+.category-cover { width: 100%; max-width: 1100px; margin: 0 auto 25px; }
+
+@media (min-width: 49rem) { .category-cover { margin: 0 auto 50px; } }
+
 /* Most of these imports are derived from https://github.com/poole/poole. Designed, built, and released under MIT license by @mdo. */
 * { box-sizing: border-box; }
 
@@ -48,7 +90,7 @@ html, body { margin: 0; padding: 0; }
 
 html { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif; font-size: 1rem; line-height: 1.5; }
 
-@media (min-width: 49rem) { html { font-size: 1.25rem; } }
+@media (min-width: 80rem) { html { font-size: 1.25rem; } }
 
 body { text-size-adjust: 100%; }
 
@@ -352,7 +394,7 @@ body { background-attachment: fixed; background-color: #202020; background-image
 .home #sidebar > *:last-child { margin-bottom: 0.5rem; }
 
 /* ----------------------------------------------------------- Tablet / Desktop view ----------------------------------------------------------- */
-@media (min-width: 49rem) { body { flex-direction: row; min-height: 100vh; -webkit-overflow-scrolling: touch; overflow-y: auto; } body > * { -webkit-overflow-scrolling: touch; overflow-y: auto; } /* Undo mobile CSS */ #sidebar, .home #sidebar { text-align: left; width: 18rem; } #sidebar > *:last-child, .home #sidebar > *:last-child { margin-bottom: 0; } #sidebar { position: fixed; bottom: 0; left: 0; } #sidebar .site-title { font-size: 3.25rem; } #sidebar .site-title .back-arrow { display: none; } #sidebar p.lead, #sidebar header ~ * { display: block; } #sidebar header ~ nav { display: flex; } .index #sidebar { margin-bottom: 0; } .container { background: #fff; color: #515151; min-height: 100vh; padding: 4rem 4rem 0; margin-left: 18rem; } .container > header { color: #313131; margin: 0; } .container > header h1, .container > header h2 { color: inherit; } .container > header h1:last-child, .container > header h2:last-child { margin-bottom: 0.5rem; } .container > * { max-width: 38rem; padding: 0; } }
+@media (min-width: 80rem) { body { flex-direction: row; min-height: 100vh; -webkit-overflow-scrolling: touch; overflow-y: auto; } body > * { -webkit-overflow-scrolling: touch; overflow-y: auto; } /* Undo mobile CSS */ #sidebar, .home #sidebar { text-align: left; width: 18rem; } #sidebar > *:last-child, .home #sidebar > *:last-child { margin-bottom: 0; } #sidebar { position: fixed; bottom: 0; left: 0; } #sidebar .site-title { font-size: 3.25rem; } #sidebar .site-title .back-arrow { display: none; } #sidebar p.lead, #sidebar header ~ * { display: block; } #sidebar header ~ nav { display: flex; } .index #sidebar { margin-bottom: 0; } .container { background: #fff; color: #515151; min-height: 100vh; padding: 4rem 4rem 0; margin-left: 18rem; } .container > header { color: #313131; margin: 0; } .container > header h1, .container > header h2 { color: inherit; } .container > header h1:last-child, .container > header h2:last-child { margin-bottom: 0.5rem; } .container > * { max-width: 38rem; padding: 0; } }
 
 /* ----------------------------------------------------------- Sidebar links + nav ----------------------------------------------------------- */
 #sidebar a { color: #fff; }
@@ -377,7 +419,7 @@ body { background-attachment: fixed; background-color: #202020; background-image
 
 #sidebar-icon-links { flex-flow: row wrap; justify-content: center; margin-top: 1rem; max-width: 100%; }
 
-@media (min-width: 49rem) { #sidebar-icon-links { justify-content: flex-start; margin-left: -0.25em; } }
+@media (min-width: 80rem) { #sidebar-icon-links { justify-content: flex-start; margin-left: -0.25em; } }
 
 #sidebar nav > * { display: block; line-height: 1.75; }
 
@@ -427,6 +469,8 @@ article + * > h2:first-child, article + * > h3:first-child, .post-body ~ section
 
 button.disqus-load { margin-top: 1em; }
 
+.p5-embed-container { max-width: 800px; text-align: center; margin: auto; margin-bottom: 10px; }
+
 /* Pagination Super lightweight (HTML-wise) blog pagination. Should only be visible when there is navigation available -- single buttons at top or bottom of each page. */
 .pagination { color: #ccc; margin-bottom: 2rem; text-align: center; }
 
@@ -442,7 +486,7 @@ button.disqus-load { margin-top: 1em; }
 
 .home.index #sidebar { padding-bottom: 2rem; }
 
-@media (min-width: 49rem) { .pagination > a { box-shadow: none; } .pagination > a:hover { box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); } .content .pagination:first-child { margin-top: 0; } .content .pagination:first-child + * { border-top: 1px solid #e5e5e5; margin-top: 2rem; padding-top: 2rem; } .index #sidebar { padding-bottom: 2rem; } }
+@media (min-width: 80rem) { .pagination > a { box-shadow: none; } .pagination > a:hover { box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); } .content .pagination:first-child { margin-top: 0; } .content .pagination:first-child + * { border-top: 1px solid #e5e5e5; margin-top: 2rem; padding-top: 2rem; } .index #sidebar { padding-bottom: 2rem; } }
 
 .message { background-color: #f9f9f9; color: #717171; margin-bottom: 1rem; padding: 1rem; }
 
