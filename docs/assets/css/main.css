@@ -5,7 +5,19 @@ All following lines taken from tufte.scss of tufte-jekyll
 - Other comments are from original dev of tufte-jekyll 
 - Only sidenotes handled
 -------------------------------------------------------------------- */
-.sidenote, .marginnote { float: right; clear: right; margin-right: -60%; width: 50%; margin-top: 0; margin-bottom: 1.96rem; font-size: 1.0rem; line-height: 1.96; vertical-align: baseline; position: relative; }
+/* -- FULLWIDTH -- */
+figcaption { float: right; clear: right; margin-right: -50%; margin-top: 0; margin-bottom: 0; font-size: 1.0rem; line-height: 1.6; vertical-align: baseline; position: relative; max-width: 40%; }
+
+figure.fullwidth figcaption { float: left; margin-right: 0%; margin-left: 33%; max-width: 100%; }
+
+img { max-width: 100%; }
+
+figure.fullwidth { max-width: 150%; width: 150%; }
+
+/*-- SIDENOTES AND MARGINNOTES -- */
+body { counter-reset: sidenote-counter; }
+
+.sidenote, .marginnote { float: right; clear: right; margin-right: -60%; width: 50%; margin-top: 0; margin-bottom: 1.96rem; font-size: 0.9rem; line-height: 1.96; vertical-align: baseline; position: relative; }
 
 li .sidenote, li .marginnote { margin-right: -80%; }
 
@@ -13,7 +25,7 @@ blockquote .sidenote, blockquote .marginnote { margin-right: -79%; }
 
 .sidenote-number { counter-increment: sidenote-counter; }
 
-.sidenote-number:after, .sidenote:before { content: counter(sidenote-counter) " "; font-size: 1.0rem; color: #a00000; position: relative; vertical-align: baseline; }
+.sidenote-number:after, .sidenote:before { content: counter(sidenote-counter) " "; font-size: 0.9rem; color: #a00000; position: relative; vertical-align: baseline; }
 
 .sidenote-number:after { content: counter(sidenote-counter); font-size: 0.8rem; top: -0.5rem; left: -0.1rem; }
 
@@ -394,7 +406,7 @@ body { background-attachment: fixed; background-color: #202020; background-image
 .home #sidebar > *:last-child { margin-bottom: 0.5rem; }
 
 /* ----------------------------------------------------------- Tablet / Desktop view ----------------------------------------------------------- */
-@media (min-width: 80rem) { body { flex-direction: row; min-height: 100vh; -webkit-overflow-scrolling: touch; overflow-y: auto; } body > * { -webkit-overflow-scrolling: touch; overflow-y: auto; } /* Undo mobile CSS */ #sidebar, .home #sidebar { text-align: left; width: 18rem; } #sidebar > *:last-child, .home #sidebar > *:last-child { margin-bottom: 0; } #sidebar { position: fixed; bottom: 0; left: 0; } #sidebar .site-title { font-size: 3.25rem; } #sidebar .site-title .back-arrow { display: none; } #sidebar p.lead, #sidebar header ~ * { display: block; } #sidebar header ~ nav { display: flex; } .index #sidebar { margin-bottom: 0; } .container { background: #fff; color: #515151; min-height: 100vh; padding: 4rem 4rem 0; margin-left: 18rem; } .container > header { color: #313131; margin: 0; } .container > header h1, .container > header h2 { color: inherit; } .container > header h1:last-child, .container > header h2:last-child { margin-bottom: 0.5rem; } .container > * { max-width: 38rem; padding: 0; } }
+@media (min-width: 80rem) { body { flex-direction: row; min-height: 100vh; -webkit-overflow-scrolling: touch; overflow-y: auto; } body > * { -webkit-overflow-scrolling: touch; overflow-y: auto; } /* Undo mobile CSS */ #sidebar, .home #sidebar { text-align: left; width: 17rem; } #sidebar > *:last-child, .home #sidebar > *:last-child { margin-bottom: 0; } #sidebar { position: fixed; bottom: 0; left: 0; } #sidebar .site-title { font-size: 3.25rem; } #sidebar .site-title .back-arrow { display: none; } #sidebar p.lead, #sidebar header ~ * { display: block; } #sidebar header ~ nav { display: flex; } .index #sidebar { margin-bottom: 0; } .container { background: #fff; color: #515151; min-height: 100vh; padding: 4rem 4rem 0; margin-left: 17rem; } .container > header { color: #313131; margin: 0; } .container > header h1, .container > header h2 { color: inherit; } .container > header h1:last-child, .container > header h2:last-child { margin-bottom: 0.5rem; } .container > * { max-width: 38rem; padding: 0; } }
 
 /* ----------------------------------------------------------- Sidebar links + nav ----------------------------------------------------------- */
 #sidebar a { color: #fff; }
@@ -469,12 +481,12 @@ article + * > h2:first-child, article + * > h3:first-child, .post-body ~ section
 
 button.disqus-load { margin-top: 1em; }
 
-.p5-embed-container { max-width: 800px; text-align: center; margin: auto; margin-bottom: 10px; }
+.p5-embed-container { max-width: 800px; text-align: center; margin: auto; margin-bottom: 10px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif; font-size: 1rem; }
 
 /* Pagination Super lightweight (HTML-wise) blog pagination. Should only be visible when there is navigation available -- single buttons at top or bottom of each page. */
 .pagination { color: #ccc; margin-bottom: 2rem; text-align: center; }
 
-.pagination > a { background: #fff; border: solid #e5e5e5; border-radius: 300px; border-width: 1px; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); display: inline-block; max-width: 18rem; padding: 1em 1.5em; width: 60%; }
+.pagination > a { background: #fff; border: solid #e5e5e5; border-radius: 300px; border-width: 1px; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.16); display: inline-block; max-width: 17rem; padding: 1em 1.5em; width: 60%; }
 
 .pagination > a:hover { background-color: #e5e5e5; }
 

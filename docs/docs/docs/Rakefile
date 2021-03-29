@@ -21,3 +21,5 @@ task :generateInDocs do
     "destination" => "docs"
   })).process
 end
+
+task :default => :generate

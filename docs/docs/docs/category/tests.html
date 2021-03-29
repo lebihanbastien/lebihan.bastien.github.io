@@ -32,6 +32,41 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
 
   <!-- Additional head bits without overriding original head -->
+ <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: [
+      "MathMenu.js",
+      "MathZoom.js",
+      "AssistiveMML.js",
+      "a11y/accessibility-menu.js"
+    ],
+    jax: ["input/TeX", "output/CommonHTML"],
+    TeX: {
+      extensions: [
+        "AMSmath.js",
+        "AMSsymbols.js",
+        "noErrors.js",
+        "noUndefined.js",
+      ]
+    }
+  });
+</script>
+
+
+
+
+<!-- Loading D3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Loading MathJax -->
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+ <!--   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+ 
+  
 </head>
 
 
@@ -54,9 +89,6 @@
   </header>
   <nav id="sidebar-nav-links">
   
-    <a class="home-link "
-        href="/">Home</a>
-  
   
 
   
@@ -71,22 +103,12 @@
   
     
       <a class="page-link "
-          href="/about.html">About</a>
+          href="/about.html">À propos</a>
     
   
 
   
     
-  
-
-  
-    
-  
-
-  
-    
-  
-
   
 
   
@@ -120,14 +142,10 @@
   
 
   
-
-  
     
   
 
-
   
-
 
   
     
@@ -143,8 +161,38 @@
 
   
     
+  
+
+  
+
+
+  
+
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+    	 
       <a class="category-link "
-          href="/category/hydeout.html">Hydeout</a>
+          href="/category/climat.html">Climat</a>
+        
+    
+  
+
+  
+    
+    	
     
   
 
@@ -160,15 +208,10 @@
 
   
     
-  
-
-  
-    
-  
-
-  
-
-  
+    	 
+      <a class="category-link "
+          href="/category/serendipite.html">Sérendipité</a>
+        
     
   
 
@@ -182,15 +225,31 @@
 
   
     
-  
-
-  
-
-  
-    
+    	 
       <a class="category-link  active"
           href="/category/tests.html">Tests</a>
+        
     
+  
+
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
   
 
 
@@ -253,44 +312,73 @@
 </div>
 
     <main class="container">
-      <header>
-  
+      <div class="category-page-container">
 
-
-  <h1 class="page-title">Tests</h1>
-</header>
-<div class="content">
   
-  <p>Category for test posts.</p>
+    <p>Category for test posts.</p>
 
 <p><a href="/pages/sidenotes.html">Direct link to pages/sidenotes.html </a></p>
 
 <p>Posts are listed after this point.</p>
 
+  
+
+  <section class="category-posts-list">
+    
+
+    
+      
+        
+        <a href="/sidenotes" class='category-post-link'>
+          <div class='category-post-item'>
+            <div class='category-post-cover' style='background-image:url(/assets/img/rhino.png);'></div>
+            <h3 class='category-post-title'>
+                Testing Sidenotes
+            </h3>
+           <div class='category-post-date'>
 
 
-<ul class="posts-list">
-  
-  
-    <li>
-      <h3>
-        <a href="/tests/2021/02/14/testing-sidenotes.html">
-          Testing Sidenotes
-          <small>14 Feb 2021</small>
-        </a>
-      </h3>
-    </li>
-  
-</ul>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Feb 14, 2021
 </div>
+          </div>
+        </a>
+      
+    
+
+    
 
 
-
-
+  </section>
+</div>
     </main>
 
     <!-- Optional footer content -->
+
 
   </body>
 </html>

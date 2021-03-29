@@ -6,6 +6,10 @@ rm -r ./docs
 
 cp -r _site docs
 
+git add .
+
+git commit -m "update docs" 
+
 git checkout gh-pages
 git merge main
 git push origin gh-pages
