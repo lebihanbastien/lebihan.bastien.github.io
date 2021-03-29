@@ -3,7 +3,7 @@
 ## Usage {% maincolumn 'path/to/image' 'This is the caption' %}
 #
 module Jekyll
-  class RenderMainColumnTag < Liquid::Tag
+  class RenderMainColumnJsTag < Liquid::Tag
 
   	require "shellwords"
     require "kramdown"
@@ -23,16 +23,9 @@ module Jekyll
       label = Kramdown::Document.new(@text[1],{remove_span_html_tags:true}).to_html # render markdown in caption
       label = converter.convert(label).gsub(/<\/?p[^>]*>/, "").chomp # remove <p> tags from render output
 
-      if @text[0].start_with?('http://', 'https://','//')
-        "<figure class='maincolumn'><figcaption>#{label}</figcaption><<img src='#{@text[0]}'/>/figure>"
-        #"<label for='#{@text[2]}' class='margin-toggle'> &#8853;</label><input type='checkbox' id='#{@text[2]}' class='margin-toggle'/><span class='marginnote'>#{label} </span>"
-      else
-        "<figure class='maincolumn'><figcaption>#{label}</figcaption><img src='#{baseurl}/#{@text[0]}'/></figure>"
-        #"<label for='#{@text[2]}' class='margin-toggle'> &#8853;</label><input type='checkbox' id='#{@text[2]}' class='margin-toggle'/><span class='marginnote'>#{label} </span>"
-
-      end
+      "<figure id='#{@text[0]}_parent'><figcaption>#{label}</figcaption><div id='#{@text[0]}'></div></figure>"
     end
   end
 end
 
-Liquid::Template.register_tag('maincolumn', Jekyll::RenderMainColumnTag)
+Liquid::Template.register_tag('maincolumnJs', Jekyll::RenderMainColumnJsTag)

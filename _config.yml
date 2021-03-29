@@ -3,9 +3,9 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Full Methane Vachette
+title:            Full Méthane Vachette
 tagline:          'Personal site'
-description:      'Born to grill'
+description:      'Working class title'
 url:              https://lebihanbastien.github.io
 #baseurl:          '/fmv'
                   # the optional subpath of your site, e.g. "/blog"

@@ -23,6 +23,32 @@ All following lines taken from tufte.scss of tufte-jekyll
 - Only sidenotes handled
 -------------------------------------------------------------------- */
 
+/* -- FULLWIDTH -- */
+
+figcaption { float: right;
+             clear: right;
+             margin-right: -50%;
+             margin-top: 0;
+             margin-bottom: 0;
+             font-size: 1.0rem;
+             line-height: 1.6;
+             vertical-align: baseline;
+             position: relative;
+             max-width: 40%; }
+
+figure.fullwidth figcaption { float: left; margin-right: 0%; margin-left: 33%; max-width: 100%; }
+
+img { max-width: 100%; }
+
+figure.fullwidth { max-width: 150%; width:150% }
+
+
+//figure.maincolumn {float: center;margin-left: 20%;}
+
+
+/*-- SIDENOTES AND MARGINNOTES -- */
+
+body { counter-reset: sidenote-counter; }
 
 $contrast-color: #a00000;
 .sidenote, .marginnote { float: right;
@@ -31,7 +57,7 @@ $contrast-color: #a00000;
                          width: 50%;
                          margin-top: 0;
                          margin-bottom: 1.96rem;
-                         font-size: 1.0rem;
+                         font-size: 0.9rem;
                          line-height: 1.96; //changed to bring line heights into rational pattern
                          vertical-align: baseline;
                          position: relative; }
@@ -44,7 +70,7 @@ blockquote .sidenote, blockquote .marginnote { margin-right: -79% }
 .sidenote-number { counter-increment: sidenote-counter; }
 
 .sidenote-number:after, .sidenote:before { content: counter(sidenote-counter) " ";
-					                                 font-size: 1.0rem;
+					                                 font-size: 0.9rem;
                                            color: $contrast-color; //added color
                                            position: relative;
                                            vertical-align: baseline; }
@@ -125,6 +151,8 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                             figcaption.maincolumn-figure, figure.fullwidth figcaption { float:none; text-align: center;}
                             figure.fullwidth figcaption { margin-left: 0; }
                           }
+
+
 
 
 // Mathjax fonts need TLC
