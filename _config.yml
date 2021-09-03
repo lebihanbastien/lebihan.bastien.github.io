@@ -19,13 +19,14 @@ author:
   url:            https://twitter.com/lebihanbastien
 
 paginate:         5
-paginate_path:    '/page:num'
+#paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
 plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-compress-images
 
 # Sidebar link settings
 sidebar_home_link:  false
@@ -33,3 +34,15 @@ sidebar_home_link:  false
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
+
+include: 
+  - _pages
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - docs/
+  - bin/
