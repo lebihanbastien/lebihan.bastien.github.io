@@ -8,7 +8,7 @@ cp -r _site docs
 
 git add .
 
-git commit -m "update docs" 
+git commit -m "DEP update docs" 
 
 git checkout gh-pages
 git merge main

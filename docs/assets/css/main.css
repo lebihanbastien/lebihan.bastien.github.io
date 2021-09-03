@@ -19,7 +19,7 @@ body { counter-reset: sidenote-counter; }
 
 .sidenote, .marginnote { float: right; clear: right; margin-right: -60%; width: 50%; margin-top: 0; margin-bottom: 1.96rem; font-size: 0.9rem; line-height: 1.96; vertical-align: baseline; position: relative; }
 
-li .sidenote, li .marginnote { margin-right: -80%; }
+li .marginnote { margin-right: -80%; }
 
 blockquote .sidenote, blockquote .marginnote { margin-right: -79%; }
 
