@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 bundle exec jekyll build
 
@@ -12,5 +12,10 @@ git commit -m "DEP update docs"
 
 git checkout gh-pages
 git merge main
-git push origin gh-pages
+
+source ./bin/id.sh
+echo "GITHUB_USERNAME = " $GITHUB_USERNAME
+echo "REPOSITORY_NAME = " $REPOSITORY_NAME
+git push https://$GITHUB_ACCESS_TOKEN@github.com/$GITHUB_USERNAME/$REPOSITORY_NAME.git gh-pages
+
 git checkout main
