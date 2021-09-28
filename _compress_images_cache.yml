@@ -1,12 +1,6 @@
 ---
-assets/img/badge.png: badge.png
-assets/img/napoleons-march.png: napoleons-march.png
-assets/img/badge_1.png: badge_1.png
-assets/img/figure2.png: figure2.png
-assets/img/figure3.png: figure3.png
-assets/img/badge_3.png: badge_3.png
+assets/img/citations/chris-lawton-books.png: chris-lawton-books.png
 assets/img/rhino.png: rhino.png
-assets/img/figure1.png: figure1.png
 assets/img/fresque/fresque.png: fresque.png
 assets/img/fresque/fresqueRouge.png: fresqueRouge.png
 assets/img/fresque/inegalites.png: inegalites.png
@@ -16,8 +10,7 @@ assets/img/fresque/fresqueSmall.png: fresqueSmall.png
 assets/img/fresque/Environmental-impact-of-food-by-life-cycle-stage.png: Environmental-impact-of-food-by-life-cycle-stage.png
 assets/img/fresque/mitigation_1_5.png: mitigation_1_5.png
 assets/img/alimentation/lasserpe.png: lasserpe.png
-assets/img/badge_2.png: badge_2.png
-assets/img/exports-imports.png: exports-imports.png
-assets/img/citations/chris-lawton-zvKx6ixUhWQ-unsplash.jpg: chris-lawton-zvKx6ixUhWQ-unsplash.jpg
-assets/img/citations/books.png: books.png
-assets/img/citations/chris-lawton-books.png: chris-lawton-books.png
+assets/img/citations/zinn.jpg: zinn.jpg
+assets/img/citations/zinn2.jpg: zinn2.jpg
+assets/img/citations/rosenberg.jpg: rosenberg.jpg
+assets/img/citations/vuillard.jpg: vuillard.jpg

@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Howard Zinn – A people's History of the United States"
-permalink: "/zinn2003/"
+cover: citations/zinn.jpg
 ---
 
 ## "Tyranny is tyrrany"

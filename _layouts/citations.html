@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+{% if page.quote %}
+  {% if page.quoted %}
+    <p class=citation>
+    <cite>{{ page.quote }}</cite> -
+    {{ page.quoted }}
+    </p>
+  {% else %}
+    <p class=citation>
+    <cite>{{ page.quote }}</cite>
+    </p>
+  {% endif %}
+{% endif %}
+
+<header>
+  <h1 class="post-title">{{ page.title }}</h1>
+</header>
+<div class="content">
+  {% include post-meta.html post=page %}
+
+  
+  <h2> Par ouvrage </h2> <br>
+  <section class="category-posts-list">
+    {% assign category = page.category | default: page.title %}
+
+    {% for post in site.citations %}
+      {% if post.draft != true  %}
+        {% capture imagePath %}/assets/img/{{ post.cover }}{% endcapture %}
+        <a href="{{ site.baseurl }}{{ post.url }}" class='category-post-link'>
+          <div class='category-post-item'>
+            <div class='category-post-cover' style='background-image:url({{ imagePath | relative_url }});'></div>
+            <h3 class='category-post-title'>
+                {{ post.title }}
+            </h3>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </section>
+
+  <h2> En vrac {% marginnote 'sn-id-source' 'Références :'%} </h2>
+  <div class="post-body">
+    {{ content }}
+    {% include post-tags.html post=page %}
+  </div>
+
+</div>

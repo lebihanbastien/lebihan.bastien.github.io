@@ -4,7 +4,7 @@ highlighter:      rouge
 
 # Setup
 title:            Full Méthane Vachette
-tagline:          'Personal site'
+tagline:          ''
 description:      'Working class title'
 url:              https://lebihanbastien.github.io
 #baseurl:          '/fmv'
@@ -35,6 +35,10 @@ sidebar_home_link:  false
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
 
+collections:
+  citations:
+    output: true                               
+
 include: 
   - _pages
 
@@ -46,3 +50,5 @@ exclude:
   - Gemfile.lock
   - docs/
   - bin/
+  - _compress_images_cache.yml
+  - trash

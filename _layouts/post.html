@@ -2,6 +2,19 @@
 layout: default
 ---
 
+{% if page.quote %}
+  {% if page.quoted %}
+    <p class=citation>
+    <cite>{{ page.quote }}</cite> -
+    {{ page.quoted }}
+    </p>
+  {% else %}
+    <p class=citation>
+    <cite>{{ page.quote }}</cite>
+    </p>
+  {% endif %}
+{% endif %}
+
 <header>
   <h1 class="post-title">{{ page.title }}</h1>
 </header>

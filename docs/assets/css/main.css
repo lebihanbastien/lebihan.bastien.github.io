@@ -502,6 +502,8 @@ button.disqus-load { margin-top: 1em; }
 
 .message { background-color: #f9f9f9; color: #717171; margin-bottom: 1rem; padding: 1rem; }
 
+.citation { background-color: #f9f9f9; color: #717171; padding: 0.5rem; }
+
 .search-row { border: 1px solid #e5e5e5; border-radius: 300px; display: flex; padding: 2px; }
 
 .search-row input { border: 0; }
