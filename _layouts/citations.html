@@ -21,7 +21,7 @@ layout: default
 <div class="content">
   {% include post-meta.html post=page %}
 
-  
+  {{content}}
   <h2> Par ouvrage </h2> <br>
   <section class="category-posts-list">
     {% assign category = page.category | default: page.title %}
@@ -41,10 +41,6 @@ layout: default
     {% endfor %}
   </section>
 
-  <h2> En vrac {% marginnote 'sn-id-source' 'Références :'%} </h2>
-  <div class="post-body">
-    {{ content }}
-    {% include post-tags.html post=page %}
-  </div>
+  
 
 </div>

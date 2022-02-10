@@ -8,16 +8,19 @@ categories:
   - Climat
 ---
 
-<p class="message"> Une sélection d'article à lire, d'outil à tester, de livre à dévorer, pour prolonger la discussion après une Fresque du Climat. Se lit bien même si l'on n'a pas encore fait la Fresque ! </p>
-
-
 {% include imageTitle.html name="fresque/fresque.png" %}
+
+
+Voici une sélection d'article à lire, d'outil à tester, de livre à dévorer, pour prolonger la discussion après une Fresque du Climat. Se lit bien même si l'on n'a pas encore fait la Fresque !
+
+<!--more-->
 
 
 ## Se remémorer la Fresque
 
 Si vous souhaitez vous rafraîchir la mémoire, une correction de la Fresque <a href="https://prezi.com/view/tJJYWcXs12lz9cXCngmH/">est disponible en ligne</a>.{% sidenote 'sn-id-conseil' 'Ne la diffusez pas trop, bien sûr, histoire que ceux qui n&rsquo;ont pas encore participé puissent profiter au mieux de l&rsquo;expérience.'%}
-Pour rappel, la Fresque se base sur le 5e rapport du Groupe d'experts intergouvernemental sur l'évolution du climat (GIEC), dont un décryptage interactif est disponible <a href="http://leclimatchange.fr/">ici</a>. Le prochain rapport du GIEC est prévu pour 2021. Chic chic chic !
+Pour rappel, la Fresque se base essentiellement sur le 5e Rapport d'Evaluation -- dit *Fifth Assessment Report*, ou AR5 -- du Groupe d'Experts Intergouvernemental sur l'Evolution du Climat (GIEC). Un décryptage interactif de l'AR5 est disponible <a href="http://leclimatchange.fr/">ici</a>. 
+Les concepteurs de la Fresque ont aussi commencé à prendre en compte les données et conclusions du 6e Rapport d'Evaluation (AR6), dont la première partie a été publiée en 2021. Vous trouverez à [cette adresse](https://twitter.com/valmasdel/status/1428722686776287238) un résumé par Valérie Masson-Delmotte, la co-présidente du groupe de travail à l'initiative ce document.
 
 Les illustrations perso présentées après la Fresque sont disponibles <a href="https://drive.google.com/drive/folders/1FL_waBt5hCNP1HpbW-tC_XP9S-BpaOmi?usp=sharing"> ici </a>. C'est un éternel travail en cours, si vous avez des suggestions... J'ai déjà prévu d'ajouter un peu plus d'explications (un verso), et des références plus précises.
 

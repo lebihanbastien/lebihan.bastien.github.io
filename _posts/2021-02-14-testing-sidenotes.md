@@ -4,11 +4,16 @@ title: "Testing Sidenotes"
 permalink: sidenotes
 cover: rhino.png
 draft: false
+test: true
 categories:
   - Tests
 ---
 
 {% include image.html name="rhino.png" %}
+
+Une page de test pour le CSS inspiré de tufte-jekyll
+
+<!--more-->
 
 # Testing Sidenotes
 
