@@ -315,13 +315,7 @@
 
     <main class="container">
       <div class="content">
-    <h1 class="page-title">Homepage</h1>
-</div>
-
-
-<!--
-<div class="content">
-   
+  
 <div class="pagination">
   <a class="pagination-item newer"
      href="/page3">
@@ -331,16 +325,19 @@
 
 
 
-    <h1 class="page-title">Homepage</h1>
+  <p class="message"> Bienvenue sur le site qui reste entre le premier et le second degré. </p>
+
 
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/hydeout/2010/09/10/post-twitter-embeds.html">
-        Post: Twitter Embed
-      </a>
-    </h2>
-    <div class="post-meta">
+  
+    
+      <article class="post-body">
+        <h2 class="post-title">
+          <a href="/hydeout/2010/09/10/post-twitter-embeds.html">
+            Post: Twitter Embed
+          </a>
+        </h2>
+        <div class="post-meta">
   <span class="post-date">
     
       
@@ -415,31 +412,34 @@ Sep 10, 2010
   </span>
 </div>
 
-    
-      <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Oh I dunno. It&#39;s probably been over 15 years since I smudged out a face with a pencil and kneaded eraser. <a href="https://twitter.com/hashtag/WIP?src=hash">#WIP</a> <a href="https://twitter.com/hashtag/Sktchy?src=hash">#Sktchy</a> <a href="https://t.co/PwqbMddyVK">pic.twitter.com/PwqbMddyVK</a></p>&mdash; Michael Rose (@mmistakes) <a href="https://twitter.com/mmistakes/status/826644109670612997">February 1, 2017</a></blockquote>
+        
+          <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Oh I dunno. It&#39;s probably been over 15 years since I smudged out a face with a pencil and kneaded eraser. <a href="https://twitter.com/hashtag/WIP?src=hash">#WIP</a> <a href="https://twitter.com/hashtag/Sktchy?src=hash">#Sktchy</a> <a href="https://t.co/PwqbMddyVK">pic.twitter.com/PwqbMddyVK</a></p>&mdash; Michael Rose (@mmistakes) <a href="https://twitter.com/mmistakes/status/826644109670612997">February 1, 2017</a></blockquote>
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+<p>This post tests Twitter Embeds.</p>
 
-    
+        
 
-    
-      
-      
-      
+        
+          
+          
+          
 
-      
-        <a href="/hydeout/2010/09/10/post-twitter-embeds.html">More &hellip;</a>
-      
+          
+        
+      </article>
     
-  </article>
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/hydeout/2010/06/02/post-video-youtube.html">
-        Post: Video (YouTube)
-      </a>
-    </h2>
-    <div class="post-meta">
+  
+  
+    
+      <article class="post-body">
+        <h2 class="post-title">
+          <a href="/hydeout/2010/06/02/post-video-youtube.html">
+            Post: Video (YouTube)
+          </a>
+        </h2>
+        <div class="post-meta">
   <span class="post-date">
     
       
@@ -499,31 +499,53 @@ Jun 2, 2010
   </span>
 </div>
 
-    
-      <div class="embed-responsive embed-responsive-16by9">
+        
+          <div class="embed-responsive embed-responsive-16by9">
   <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/l2Of1-d5E5o?controls=0&amp;" frameborder="0" allowfullscreen=""></iframe>
 </div>
 
-    
+<p>This post tests YouTube video embeds.</p>
 
-    
-      
-      
-      
+<p>Simply wrap embeds with a <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> element and the appropriate classes:</p>
 
-      
-        <a href="/hydeout/2010/06/02/post-video-youtube.html">More &hellip;</a>
-      
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 16:9 aspect ratio --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"embed-responsive embed-responsive-16by9"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"embed-responsive-item"</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- 4:3 aspect ratio --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"embed-responsive embed-responsive-4by3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"embed-responsive-item"</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- responsive iframe. The framesize reduces proportionately when viewing in mobile --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"video-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;iframe</span> <span class="na">class=</span><span class="s">"embed-responsive-item"</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+        
+
+        
+          
+          
+          
+
+          
+        
+      </article>
     
-  </article>
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/hydeout/2010/02/05/post-quote.html">
-        Post: Quote
-      </a>
-    </h2>
-    <div class="post-meta">
+  
+  
+    
+      <article class="post-body">
+        <h2 class="post-title">
+          <a href="/hydeout/2010/02/05/post-quote.html">
+            Post: Quote
+          </a>
+        </h2>
+        <div class="post-meta">
   <span class="post-date">
     
       
@@ -588,31 +610,35 @@ Feb 5, 2010
   </span>
 </div>
 
-    
-      <blockquote>
+        
+          <blockquote>
   <p>Only one thing is impossible for God: To find any sense in any copyright law on the planet.</p>
 
   <p><cite><a href="http://www.brainyquote.com/quotes/quotes/m/marktwain163473.html">Mark Twain</a></cite></p>
 </blockquote>
 
-    
+        
 
-    
-      
-      
-      
+        
+          
+          
+          
 
-      
+          
+        
+      </article>
     
-  </article>
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/hydeout/2010/01/07/post-standard.html">
-        Post: Standard
-      </a>
-    </h2>
-    <div class="post-meta">
+  
+  
+    
+      <article class="post-body">
+        <h2 class="post-title">
+          <a href="/hydeout/2010/01/07/post-standard.html">
+            Post: Standard
+          </a>
+        </h2>
+        <div class="post-meta">
   <span class="post-date">
     
       
@@ -682,32 +708,36 @@ Jan 7, 2010
   </span>
 </div>
 
-    
-      <p>All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, “Oh, why can’t you remain like this for ever!” This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.</p>
+        
+          <p>All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, “Oh, why can’t you remain like this for ever!” This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.</p>
 
 <p>Mrs. Darling first heard of Peter when she was tidying up her children’s minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.</p>
 
 
-    
+        
 
-    
-      
-      
-      
+        
+          
+          
+          
 
-      
-        <a href="/hydeout/2010/01/07/post-standard.html">More &hellip;</a>
-      
+          
+            <a href="/hydeout/2010/01/07/post-standard.html">Lire la suite</a>
+          
+        
+      </article>
     
-  </article>
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/hydeout/2010/01/07/post-modified.html">
-        Post: Modified Date
-      </a>
-    </h2>
-    <div class="post-meta">
+  
+  
+    
+      <article class="post-body">
+        <h2 class="post-title">
+          <a href="/hydeout/2010/01/07/post-modified.html">
+            Post: Modified Date
+          </a>
+        </h2>
+        <div class="post-meta">
   <span class="post-date">
     
       
@@ -777,21 +807,23 @@ Jan 7, 2010
   </span>
 </div>
 
-    
-      <p>This post has been updated and should show a modified date if <code class="language-plaintext highlighter-rouge">last_modified_at</code> is used in the layout.</p>
+        
+          <p>This post has been updated and should show a modified date if <code class="language-plaintext highlighter-rouge">last_modified_at</code> is used in the layout.</p>
 
-    
+<p>Plugins like <a href="https://github.com/jekyll/jekyll-feed"><strong>jekyll-sitemap</strong></a> use this field to add a <code class="language-plaintext highlighter-rouge">&lt;lastmod&gt;</code> tag your <code class="language-plaintext highlighter-rouge">sitemap.xml</code>.</p>
 
-    
-      
-      
-      
+        
 
-      
-        <a href="/hydeout/2010/01/07/post-modified.html">More &hellip;</a>
-      
+        
+          
+          
+          
+
+          
+        
+      </article>
     
-  </article>
+  
   
 
   
@@ -804,7 +836,7 @@ Jan 7, 2010
 
 
 </div>
--->
+
     </main>
 
     <!-- Optional footer content -->

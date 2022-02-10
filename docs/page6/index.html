@@ -315,13 +315,7 @@
 
     <main class="container">
       <div class="content">
-    <h1 class="page-title">Homepage</h1>
-</div>
-
-
-<!--
-<div class="content">
-   
+  
 <div class="pagination">
   <a class="pagination-item newer"
      href="/page5">
@@ -331,16 +325,19 @@
 
 
 
-    <h1 class="page-title">Homepage</h1>
+  <p class="message"> Bienvenue sur le site qui reste entre le premier et le second degré. </p>
+
 
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/hydeout/2009/06/01/edge-case-many-tags.html">
-        Edge Case: Many Tags
-      </a>
-    </h2>
-    <div class="post-meta">
+  
+    
+      <article class="post-body">
+        <h2 class="post-title">
+          <a href="/hydeout/2009/06/01/edge-case-many-tags.html">
+            Edge Case: Many Tags
+          </a>
+        </h2>
+        <div class="post-meta">
   <span class="post-date">
     
       
@@ -600,27 +597,31 @@ Jun 1, 2009
   </span>
 </div>
 
-    
-      <p>This post has many tags.</p>
+        
+          <p>This post has many tags.</p>
 
-    
+        
 
-    
-      
-      
-      
+        
+          
+          
+          
 
-      
+          
+        
+      </article>
     
-  </article>
   
-  <article class="post-body">
-    <h2 class="post-title">
-      <a href="/hydeout/2009/05/15/edge-case-nested-and-mixed-lists.html">
-        Edge Case: Nested and Mixed Lists
-      </a>
-    </h2>
-    <div class="post-meta">
+  
+  
+    
+      <article class="post-body">
+        <h2 class="post-title">
+          <a href="/hydeout/2009/05/15/edge-case-nested-and-mixed-lists.html">
+            Edge Case: Nested and Mixed Lists
+          </a>
+        </h2>
+        <div class="post-meta">
   <span class="post-date">
     
       
@@ -700,27 +701,101 @@ May 15, 2009
   </span>
 </div>
 
-    
-      <p>Nested and mixed lists are an interesting beast. It’s a corner case to make sure that lists within lists do not break the ordered list numbering order and list styles go deep enough.</p>
+        
+          <p>Nested and mixed lists are an interesting beast. It’s a corner case to make sure that lists within lists do not break the ordered list numbering order and list styles go deep enough.</p>
 
-    
+<h2 id="ordered--unordered--ordered">Ordered – Unordered – Ordered</h2>
 
-    
-      
-      
-      
+<ol>
+  <li>ordered item</li>
+  <li>ordered item
+    <ul>
+      <li><strong>unordered</strong></li>
+      <li><strong>unordered</strong></li>
+    </ul>
+    <ol>
+      <li>ordered item</li>
+      <li>ordered item</li>
+    </ol>
+  </li>
+  <li>ordered item</li>
+  <li>ordered item</li>
+</ol>
 
-      
-        <a href="/hydeout/2009/05/15/edge-case-nested-and-mixed-lists.html">More &hellip;</a>
-      
+<h2 id="ordered--unordered--unordered">Ordered – Unordered – Unordered</h2>
+
+<ol>
+  <li>ordered item</li>
+  <li>ordered item
+    <ul>
+      <li><strong>unordered</strong></li>
+      <li><strong>unordered</strong></li>
+    </ul>
+    <ul>
+      <li>unordered item</li>
+      <li>unordered item</li>
+    </ul>
+  </li>
+  <li>ordered item</li>
+  <li>ordered item</li>
+</ol>
+
+<h2 id="unordered--ordered--unordered">Unordered – Ordered – Unordered</h2>
+
+<ul>
+  <li>unordered item</li>
+  <li>unordered item
+    <ol>
+      <li>ordered</li>
+      <li>ordered
+        <ul>
+          <li>unordered item</li>
+          <li>unordered item</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>unordered item</li>
+  <li>unordered item</li>
+</ul>
+
+<h2 id="unordered--unordered--ordered">Unordered – Unordered – Ordered</h2>
+
+<ul>
+  <li>unordered item</li>
+  <li>unordered item
+    <ul>
+      <li>unordered</li>
+      <li>unordered
+        <ol>
+          <li><strong>ordered item</strong></li>
+          <li><strong>ordered item</strong></li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>unordered item</li>
+  <li>unordered item</li>
+</ul>
+
+        
+
+        
+          
+          
+          
+
+          
+        
+      </article>
     
-  </article>
+  
   
 
   
 
 </div>
--->
+
     </main>
 
     <!-- Optional footer content -->
