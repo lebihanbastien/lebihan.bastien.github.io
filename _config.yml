@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            Full Méthane Vachette
 tagline:          ''
-description:      'Working class title'
+description:      'Le site qui reste entre le 1<sup>er</sup> et le 2<sup>nd</sup> degré'
 url:              https://lebihanbastien.github.io
 #baseurl:          '/fmv'
                   # the optional subpath of your site, e.g. "/blog"
@@ -40,9 +40,9 @@ sidebar_home_link:  false
 
 collections:
   citations:
-    output: true                               
+    output: true
 
-include: 
+include:
   - _pages
 
 # Exclude from processing.
